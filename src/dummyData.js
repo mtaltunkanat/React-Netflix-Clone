@@ -187,3 +187,4 @@ export const homeData = [
       time: "2hr : 38mins",
     },
   ]
+ 

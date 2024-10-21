@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 * {
   margin: 0;
   padding: 0px;
@@ -8,6 +7,7 @@
 body {
   font-family: "Poppins" sans-serif;
   background-color: #141414;
+  color: #fff;
 }
 a {
   text-decoration: none;
@@ -32,4 +32,93 @@ button {
   padding: 12px 40px;
   font-weight: 500;
   font-size: 17px;
+}
+.row{
+  width: 50%;
+}
+p{
+  line-height: 30px;
+}
+.flex{
+  display: flex;
+}
+.control-btn button {
+  background: none;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255,255, 0.3);
+}
+.control-btn .next{
+  position: absolute;
+  top: 50%;
+  right: 2%;
+}
+.control-btn .prev{
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  z-index: 99;
+}
+.heading h1{
+  font-weight: 500;
+  margin: 30px 0;
+}
+.heading a{
+  color: #e50813;
+}
+.MovieBox{
+  width: 430px;
+  height: 300px;
+  position: relative;
+  transition: 0.5s;
+  border-left: 5px solid transparent;
+}
+.MovieBox:hover{
+  cursor: pointer;
+  border-left: 5px solid #e50813;
+  transform: scale3d(1.1, 1.1, 1) translate3d(6%, 0,0) perspective(31.25em);
+  box-shadow: 0 0 0.73rem rgba(0, 0, 0, 0.9);
+}
+.MovieBox::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 430px;
+  height: 300px;
+  z-index: -1;
+  background: linear-gradient(
+  90deg,
+  rgba(0, 0, 0, 0.8) 0%,
+  rgba(20, 20, 20, 0.4)50%,
+  rgba(83, 100, 141, 0),100%
+);
+}
+.MovieBox IMG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.MovieBox .text{
+  padding: 70px 50px;
+}
+.MovieBox h3 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.MovieBox button{
+  margin-top: 15px;
+  padding: 12px 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.MovieBox button i{
+  margin-right: 10px;
 }
