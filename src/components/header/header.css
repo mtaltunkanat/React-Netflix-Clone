@@ -43,7 +43,7 @@ header button{
     header nav .flexSB{
         display: none;
     }
-    .account{
+    .account.flexSB{
         display: none;
     }
     .navMenu-list{

@@ -34,7 +34,6 @@ footer span{
 @media only screen and(max-width:768px){
     footer .container{
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
     }
 }

@@ -117,3 +117,28 @@
 .margin{
     margin-top: 50%;
 }
+
+@media only screen and (max-width:768px){
+    .homeContainer h1{
+     font-size: 50px;
+     margin: 0;
+    }
+    .home{
+        position: relative;
+        margin: 0;
+        height: 60vh !important;
+    }
+    .coverImage{
+        width: 10vw;
+        height: 70vh !important;
+    }
+    .home .row{
+        width: 100%;
+    }
+    .home .playButton{
+        display: none;
+    }
+    .margin{
+        margin-top: 0 !important;
+    }
+}
